@@ -1,2 +1,2 @@
-require('chuck.remap')
 require('chuck.packer')
+require('chuck.settings')
