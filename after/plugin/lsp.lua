@@ -53,7 +53,7 @@ cmp.setup({
 
 local nvim_lsp = require('lspconfig')
 -- [[
--- Use denols for folders with a deno.json file in the root
+-- Use denols for folders with a deno.lock file in the root
 -- and tsserver for ones with package.json
 -- ]]
 nvim_lsp.denols.setup {
