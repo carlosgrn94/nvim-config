@@ -38,4 +38,18 @@ return require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},
 		}
 	}
+    use {
+        'tanvirtin/vgit.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim'
+        },
+        config = function()
+            require('vgit').setup({
+				keymaps = {
+					['n <C-k>'] = function() require('vgit').hunk_up() end,
+					['n <C-j>'] = function() require('vgit').hunk_down() end,
+				},
+			})
+        end
+    }
 end)
